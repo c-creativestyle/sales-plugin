@@ -1,0 +1,8 @@
+{
+  "sales": {
+    "discount": {
+      "percentage": "Prozentualer Rabatt",
+      "absolute": "Absoluter Rabatt"
+    }
+  }
+}
