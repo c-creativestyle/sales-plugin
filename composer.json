@@ -1,0 +1,52 @@
+{
+    "name": "creativestyle/sales-plugin",
+    "description": "Shopware 6 plugin adding configurable cart discounts: every Nth product free or percentage discount over threshold, applying the best option automatically.",
+    "version": "1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "proprietary",
+    "require": {
+        "shopware/core": "~v6.7",
+        "shopware/storefront": "~v6.7"
+    },
+    "extra": {
+        "shopware-plugin-class": "Creativestyle\\Sales\\CreativestyleSales",
+        "copyright": "(c)",
+        "label": {
+            "de-DE": "CreativestyleSales",
+            "en-GB": "CreativestyleSales"
+        },
+        "description": {
+            "de-DE": "Shopware 6 Plugin, das automatisch den besten von zwei Rabatten anwendet: jeden N-ten Artikel gratis oder prozentualer Rabatt über einem Schwellenwert.",
+            "en-GB": "Shopware 6 plugin that automatically applies the better of two discounts: every Nth product free or a percentage discount over a threshold."
+        },
+        "manufacturerLink": {
+            "de-DE": "https://github.com/creativestyle",
+            "en-GB": "https://github.com/creativestyle"
+        },
+        "supportLink": {
+            "de-DE": "https://github.com/creativestyle",
+            "en-GB": "https://github.com/creativestyle"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Creativestyle\\Sales\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Creativestyle\\Sales\\Test\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.12",
+        "phpstan/phpstan": "^2.1",
+        "friendsofphp/php-cs-fixer": "^3.75",
+        "phpunit/phpunit": "^12.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": false
+        }
+    }
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Sales discounts</title>
+
+        <input-field type="single-select">
+            <name>nthGroupBy</name>
+            <label>Group by</label>
+            <options>
+                <option><id>name</id><name>LineItem name</name></option>
+                <option><id>refId</id><name>LineItem referencedId</name></option>
+                <option><id>type</id><name>LineItem type</name></option>
+            </options>
+            <defaultValue>name</defaultValue>
+            <placeholder>LineItem name</placeholder>
+        </input-field>
+
+        <input-field type="int">
+            <name>nthStep</name>
+            <label>Nth step</label>
+            <placeholder>5</placeholder>
+            <defaultValue>5</defaultValue>
+        </input-field>
+
+        <input-field type="float">
+            <name>percentThreshold</name>
+            <label>Percent threshold</label>
+            <defaultValue>100</defaultValue>
+            <placeholder>100</placeholder>
+        </input-field>
+
+        <input-field type="float">
+            <name>percentValue</name>
+            <label>Percent value (%)</label>
+            <defaultValue>10</defaultValue>
+            <placeholder>10</placeholder>
+        </input-field>
+    </card>
+
+</config>
